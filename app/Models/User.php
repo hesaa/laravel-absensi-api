@@ -76,4 +76,5 @@ class User extends Authenticatable implements JWTSubject
             get: fn ($value) =>  ["user", "admin"][$value],
         );
     }
+
 }

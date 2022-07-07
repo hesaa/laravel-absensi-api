@@ -97,4 +97,11 @@ class AuthController extends Controller
             ]
         ]);
     }
+
+    public function me()
+    {
+        return $this->retrunScema([
+            'user' => Auth::user(),
+        ]);
+    }
 }
